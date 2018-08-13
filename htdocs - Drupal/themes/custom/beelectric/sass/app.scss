@@ -1,0 +1,456 @@
+/* 
+google fonts 
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,600,700,900");
+
+/* 
+sass vars 
+*/
+$Black: #161616;
+$Green: #22d0b2;
+
+/* 
+remove all padding and margins 
+*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* 
+text 
+*/
+h1 {
+    font-family: raleway;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 0;
+}
+
+h2 {
+    font-family: "raleway";
+    font-size: 1,5em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #22d0b2;
+}
+
+p, label {
+    font-family: "open sans";
+    font-size: 14pt;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 
+region Header 
+*/
+.region-header {
+    display: table;
+    width: 100%;
+
+    .menu--account {
+        .menu {
+            background-color: $Green;
+            margin-left: 0;
+            display: block;
+            text-align: right;
+            width: 100%;
+
+            li {
+                display: inline-block;
+                padding: 12px 20px;
+
+                a {
+                    color: $Black;
+                }
+            }
+        }
+    }
+
+    ul.menu {
+        margin-left: 0;
+    }
+
+    .menu--main {
+        color: white;
+        text-transform: uppercase;
+        background-color: $Black;
+        width: calc(100% - 90px);
+        float: right;
+
+        li {
+            list-style-type: none;
+            font-family: raleway;
+            font-weight: 700;
+            display: inline-block;
+            margin: 15px 50px;
+            padding: 15px 0px;
+            font-size: 14px;
+
+            a {
+                color: white;
+            }
+
+            &:hover {
+                border-bottom: 2px solid #22d0b2;
+                margin-bottom: 13px;
+            }
+        }
+    }
+
+    #block-beelectric-branding {
+        width: 90px;
+        float: right;
+        background-color: $Black;
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin: 11px 20px;
+        }
+    }
+}
+
+/* header */
+.header-name {
+    background-color: $Green;
+}
+
+.header-name h1 {
+    text-align: center;
+    padding: 30px 0px 15px 0px;
+}
+
+.header-name p {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/*
+region Content
+*/
+.path-frontpage {
+    .region-content {
+        .view-row-wrapper {
+            width: 50%;
+            min-height: 400px;
+            float: left;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 150px;
+
+            .views-row {
+                .views-field-field-service-logo {
+                    svg {
+                        display: block;
+                        margin: auto;
+                        padding: 20px;
+                        font-size: 35px;
+                        color: $Green;
+                    }
+                }
+
+                .views-field-field-service-name > div {
+                    @extend h2;
+
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+            }
+
+            &:nth-child(2), &:nth-child(3) {
+                background-color: #22d0b2;
+
+                h2 {
+                    color: $Black;
+                }
+
+                svg {
+                    color: $Black !important;
+                }
+            }
+        }
+    }
+}
+
+.path-faq {
+    .region-content {
+        width: 960px;
+        margin: 50px auto;
+        padding: 50px;
+        display: block;
+        background-color: white;
+        box-sizing: border-box;
+
+        #block-beelectric-page-title {
+            display: none;
+        }
+
+        .views-row {
+            box-sizing: border-box;
+            padding: 20px 0px;
+
+            .views-field-field-question {
+                > div {
+                    @extend h1;
+
+                    color: $Green;
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .views-field-field-answer {
+                > div {
+                    @extend p;
+                }
+            }
+        }
+    }
+}
+
+.path-contact {
+    .region-content {
+        .page-title {
+            display: none;
+        }
+
+        #edit-name, #edit-mail {
+            @extend label;
+
+            font-weight: bold;
+
+            label {
+                font-weight: normal;
+            }
+        }
+
+        #edit-preview {
+            display: none;
+        }
+    }
+}
+
+.path-node {
+    div{
+        font-family: "raleway";
+    }
+    .layout-content {
+        max-width: 1100px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        h1{
+            color: $Green;
+            margin-bottom: 40px;
+        }
+        .block-local-tasks-block{
+            nav{
+                padding-bottom: 20px;
+                h2{
+                    display: none;
+                }
+                ul>li{
+                    background-color: $Green;
+                    border-radius: 10px;
+                    a{
+                        padding:10px;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .node__content{
+        >div{
+            padding-bottom: 20px;
+        }
+    }
+}
+
+/* 
+container 
+*/
+.content {
+    width: 960px;
+    margin: auto;
+    padding: 50px 0px;
+    display: inline-block;
+}
+
+.maincontent {
+    width: 1100px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.innerContent {
+    box-sizing: border-box;
+    margin: 50px 0px;
+    padding: 50px;
+}
+
+/* 
+content home 
+*/
+body {
+    background-color: #f6f6f7;
+}
+
+/* 
+Index 
+*/
+.home__img {
+    width: 100%;
+    height: calc(100vh - 208px);
+}
+
+.TextBlock h4 {
+    color: #22d0b2;
+}
+
+/* 
+Contact 
+*/
+.contact-wrapper {
+    display: flex;
+}
+
+.innerContent h1 {
+    color: #161616;
+}
+
+.left, .right {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.left {
+    width: 50%;
+    float: left;
+}
+
+.right {
+    width: 50%;
+    float: left;
+}
+
+.headContDiv {
+    margin-bottom: 30px;
+}
+
+.contNumb {
+    font-family: "raleway";
+    font-weight: 700;
+    font-size: 3em;
+    float: left;
+    padding-right: 20px;
+}
+
+.contNumb + H1 {
+    font-size: 18pt;
+    font-weight: 300;
+}
+
+.socials {
+    margin-top: 30px;
+}
+
+.social {
+    margin: 15px 0px;
+}
+
+.iconS {
+    float: left;
+    width: 50px;
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    font-family: "open sans";
+    font-size: 14px;
+    margin-bottom: 14px;
+    border: 2px solid #151515;
+}
+
+input[type="submit"] {
+    background-color: #151515;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px;
+}
+
+input[type="checkbox"] {
+    margin-top: 10px;
+    width: 30px;
+}
+
+.map {
+    display: inline-block;
+    width: 100%;
+}
+
+.gmap {
+    background-color: brown;
+    height: 400px;
+}
+
+/* 
+footer 
+*/
+.BE_footer {
+    width: 100%;
+    display: inline-block;
+    background-color: #161616;
+}
+
+footer p {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+/*
+media querries
+*/
+
+@media only screen and (max-width: 960px) {
+    .path-frontpage .region-content .view-row-wrapper {
+        width: 100%;
+    }
+
+    .path-faq {
+        .region-content {
+            width: 94%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .maincontent {
+        width: 94%;
+    }
+
+    .contact-wrapper {
+        display: block;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .left, .right, .map {
+        margin-bottom: 40px;
+    }
+}

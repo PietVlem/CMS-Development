@@ -1,0 +1,51 @@
+<div class="layout-container">
+    {{ page.header }}
+    {#
+        <header class="BE_header">
+        <img class="nav-logo" src="{{ base_path ~ directory }}/assets/images/Bee.png" alt="">
+        <nav class="BE_nav">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </nav>
+        <a href="#">
+            <div class="appLinkNav">
+                <p>
+                    <i class="fas fa-rocket"></i> App</p>
+            </div>
+        </a>
+    </header>
+    #}
+    
+    <div class="header-name">
+        <h1> - Beelectric - </h1>
+        <p>Uw ebike specialist!</p>
+    </div>
+
+    <!-- content -->
+    <div class="container">
+        <div class="home">
+            <div class="home__img" style="background: url('{{ base_path ~ directory }}/assets/images/home.jpg') no-repeat center center; background-size: cover;"></div>
+            {{ page.content }}
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="BE_footer">
+        <p>
+            <i class="fas fa-copyright"></i> Beelectric</p>
+    </footer>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+
+    </main>
+
+</div>{# /.layout-container #}

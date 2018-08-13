@@ -1,0 +1,14 @@
+name: Beelectric
+type: theme
+description: 'Beelectric theme for my CMSDEV class!'
+core: 8.x
+base theme: classy
+libraries:
+  - beelectric/global-css
+  - beelectric/global-js
+  
+regions:
+  header: 'Header'
+  content: 'Main Content'
+  footer: 'Footer'
+
